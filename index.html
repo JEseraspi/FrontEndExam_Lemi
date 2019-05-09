@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lemi | Front End Dev Exam</title>
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+    <div class="body-container">
+        <!-- welcome section -->
+        <section class="welcome-section">
+            <div class="container">
+                <a href="javascript:" class="lemi-logo"><img src="img/lemi_logo.jpg" alt="lemi logo"></a>
+                <div class="container_description">
+                    <h2>Welcome to Lemi,<span>Nicholas</span>!</h2>
+                    <p>Penbrothers and Lemi have teamed up to help you share recommendations to 
+                    your colleagues and discover more from your community.</p>
+                </div>
+                <div class="container_access-code">
+                    <span id="access-code">091785</span>
+                    <p>Download Lemi and use this code to gain access to exclusive content from Penbrothers on Lemi.</p>
+                </div>
+                <div class="container_store">
+                    <a href="javascript:"><img src="img/apple-store.jpg" alt="apple store button"></a>
+                    <a href="javascript:"><img src="img/google-play.jpg" alt="playstore button"></a>
+                </div>
+            </div>
+        </section>
+        <!-- ./welcome section -->
+        <!-- video section -->
+        <section class="video-section">
+            <div class="container">
+                <h2>Discover. Plan. Go.</h2>
+                <p>Lemi orgianizes recommendations into beatitful lists, and instantly maps them out for you.</p>
+                <div class="container_video">
+                    <video id="about-video" width="100%" muted loop playsinline>
+                        <source src="https://app.lemi.travel/video/lemi-inspired.mp4" type="video/mp4">
+                    </video>
+                    <button class="primary" id="video-button">
+                        Play video
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- ./video section -->
+        <!-- discover section -->
+        <section class="discover-section">
+            <div class="container">
+                <h2>Lemi lets you...</h2>
+                <div class="container_group">
+                    <div class="">
+                        <h5>Discover inside secrets</h5>
+                        <p>See recommendations from the whole Penbrothers community in one map.</p>
+                    </div>
+                    <div class="">
+                        <img src="img/discover-pic.jpg" alt="discover picture">
+                    </div>
+                </div>
+                <div class="container_group">
+                    <div class="">
+                        <img src="img/plan-trips-pic.jpg" alt="plan trips picture">
+                    </div>
+                    <div class="">
+                        <h5>Plan trips with colleagues</h5>
+                        <p>Invite co-workers to collaborate on lists for brainstorming ideas wherever you are, wherever you're going.</p>
+                    </div>
+                </div>
+                <div class="container_group">
+                    <div class="">
+                        <h5>Go anywhere</h5>
+                        <p>Instantly calculate distances and travel times to make the most out of your trip.</p>
+                    </div>
+                    <div class="">
+                        <img src="img/go-anywhere-pic.jpg" alt="go anywhere picture">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./discover section -->
+        <!-- list-section -->
+        <section class="list-section">
+            <div class="container">
+                <h2>Here are some lists to start you off!</h2>
+                <p>Find out what others are recommending on Lemi.</p>
+                <div class="container_lists">
+                    <div class="container_group-list">
+                        <img src="img/party-bangkok.jpg" alt="party in bangkok picture">
+                        <p>Party in Thonglor</p>
+                        <span>Bangkok</span>
+                    </div>
+                    <div class="container_group-list">
+                        <img src="img/party-bangkok.jpg" alt="party in bangkok picture">
+                        <p>English Mornings</p>
+                        <span>London, Slough</span>
+                    </div>
+                    <div class="container_group-list">
+                        <img src="img/party-bangkok.jpg" alt="party in bangkok picture">
+                        <p>Delicious Dai Pai Dongs</p>
+                        <span>Hong Kong</span>
+                    </div>
+                </div>
+                <button id="seeMore" class="primary">See more lists</button>
+            </div>
+        </section>
+        <!-- ./list-section -->
+        <!-- download section -->
+        <section class="download-section">
+            <div class="container">
+                <img src="img/lemi-app-asset.jpg" alt="lemi app asset">
+                <p>Lemi is better in your pocket. Discover more and create your own Lists in our iOS App.</p>
+                <div class="container_store">
+                    <a href="javascript:"><img src="img/apple-store.jpg" alt="apple store button"></a>
+                    <a href="javascript:"><img src="img/google-play.jpg" alt="playstore button"></a>
+                </div>
+            </div>
+        </section>
+        <!-- ./download section -->
+    </div>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <ul class="sns-links">
+                <li><a href="javascript:" target="_blank" class="facebook"></a></li>
+                <li><a href="javascript:" target="_blank" class="instagram"></a></li>
+                <li><a href="javascript:" target="_blank" class="linkedIn"></a></li>
+            </ul>
+            <p>Copyright 2019 by Finds Company Limited</p>
+        </div>
+    </footer>
+    <!-- ./footer section -->
+    <script>
+        document.querySelector("#video-button").addEventListener("click",function(){
+            document.querySelector("#about-video").play();
+            console.log(this);
+        });
+    </script>
+</body>
+</html>

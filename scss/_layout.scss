@@ -1,0 +1,183 @@
+section {
+    /* welcome section */
+    &.welcome-section {
+        .container {
+            .lemi-logo {
+                padding-bottom: 35px;
+                display: inline-block;
+            }
+            &_access-code {
+                border:2px solid #f0f0f0;
+                border-radius:3px;
+                padding:20px 15px;
+                margin: 30px 0 25px;
+                span {
+                    font-size: 2em;
+                    letter-spacing: 5px;
+                    padding-bottom: 5px;
+                    display: block;
+                    font-weight: 600;
+                    color:#00cb4a;
+                }
+            }
+        }
+    }
+    /* video section */
+    &.video-section {
+        .container {
+            &_video {
+                position:relative;
+                margin:25px 0;
+                button {
+                    position:absolute;
+                    left:50%;
+                    top:50%;
+                    transform:translate(-50%,-50%);
+                    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3);
+                    &:active {
+                        transition: 0.2s ease;
+                        transform:translate(-50%,-50%) scale(0.95);
+                        box-shadow:none;
+                    }
+                }
+            }
+        }
+    }
+    /* discover section */
+    &.discover-section {
+        .container {
+            &_group {
+                display:table;
+                text-align:left;
+                padding:5px 0;
+                &:nth-child(odd) {
+                    text-align:right;
+                    div {
+                        &:first-child {
+                            width:42.5%;
+                        }
+                        &:last-child {
+                            width:57.5%;
+                        }
+                    }
+                }
+                div {
+                    display:table-cell;
+                    vertical-align:middle;
+                    margin:auto;
+                    width:57.5%;
+                    &:last-child {
+                        width: 42.5%;
+                    }
+                    h5 {
+                        font-size: 1.15em;
+                        padding-bottom: 5px;
+                    }
+                    img {
+                        display:block;
+                        max-width:100%;
+                    }
+                }
+            }
+        }
+    }
+    /* lists-section */
+    &.list-section {
+        .container {
+            &_lists {
+                width:100%;
+                overflow: auto;
+                padding: 10px 0 35px;
+            }
+            &_group-list {
+               float:left;
+               vertical-align:top;
+               width: 33.33%;
+               padding:10px 5px;
+               @media screen and (max-width:360px) {
+                   display:block;
+                   float:initial;
+                   width:100%;
+                   padding-left:0 !important;
+                   padding-right:0 !important;
+               }
+               &:first-child {
+                   padding-left:0;
+                   padding-right:10px;
+               }
+               &:last-child {
+                   padding-right:0;
+                   padding-left:10px;
+               }
+               p {
+                   font-size:0.9em;
+                   padding:10px 5px 2.5px;
+               }
+               span {
+                   font-size:0.85em;
+                   color:#c5c5c5;
+               }
+               img {
+                   display:block;
+                   width:100%;
+                   max-width:137px;
+                   margin:auto;
+               } 
+            }
+            button {
+                padding:15px 35px;
+            }
+        }
+    }
+    /* download section */
+    &.download-section {
+        .container {
+            img {
+                display: block;
+                max-width: 100%;
+                margin:auto;
+            }
+            p {
+                padding:10px 0;
+            }
+        }
+    }
+}
+/* footer */
+footer {
+    background-color:#252525;
+    padding:25px 0;
+    text-align:center;
+    .container {
+        ul {
+            padding-bottom:70px;
+            list-style:none;
+            li {
+                padding:5px;
+                display:inline-block;
+                vertical-align:middle;
+                a {
+                    display:block;
+                    width:50px;
+                    height:45px;
+                    background-image:url(../img/sns-sprite.jpg);
+                    background-repeat:no-repeat;
+                    background-size:300% 100%;
+                    text-decoration:none;
+                    &.facebook {
+                        background-position:0 0;
+                    }
+                    &.instagram {
+                        background-position:50% 0;
+                    }
+                    &.linkedIn {
+                        background-position:100% 0;
+                    }
+                }
+            }
+        }
+        p {
+            color:#fff;
+        }
+    }
+}
